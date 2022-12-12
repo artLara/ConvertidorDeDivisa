@@ -8,5 +8,7 @@
     <string name="moneda_sudafrica">ZAR: </string>
     <string name="moneda_colombia">COP: </string>
     <string name="moneda_georgia">GEL: </string>
+    <string name="save_button">GUARDAR</string>
+
 
 </resources>

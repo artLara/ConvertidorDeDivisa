@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.SeekBar
+import com.google.firebase.database.*
 import com.google.gson.Gson
 import mx.ipn.cic.geo.currency_app.databinding.ActivityMainBinding
 import java.io.InputStreamReader
@@ -46,6 +47,15 @@ class MainActivity : AppCompatActivity() {
 
             }
         })
+
+        //Conexion a FireBase
+        val database : FirebaseDatabase = FirebaseDatabase.getInstance()
+        val referenciaBD : DatabaseReference = database.getReference("app_divisas/actualizacion")
+        binding.save.setOnClickListener{
+            val fecha = binding.textUltimActualizacion.text.toString()
+            val precio = binding.textMonedaBase.text.toString()
+            referenciaBD.child("actualizacion").child(fecha).setValue(precio)
+        }
     }
 
     private fun getCurrencyData(): Thread
