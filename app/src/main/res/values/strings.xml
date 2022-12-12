@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Convertidor de Divisas</string>
+    <string name="ultima_actualizacion">Última actualización</string>
+    <string name="moneda_base">MXN: 1.00</string>
+    <string name="moneda_dolar">USD: </string>
+    <string name="moneda_euro">EUR: </string>
+    <string name="moneda_libra">GBP: </string>
+    <string name="moneda_sudafrica">ZAR: </string>
+    <string name="moneda_colombia">COP: </string>
+    <string name="moneda_georgia">GEL: </string>
+
+</resources>
